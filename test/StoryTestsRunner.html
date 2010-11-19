@@ -4,6 +4,7 @@
 <head>
   <title>Jasmine Test Runner</title>
   <link rel="stylesheet" type="text/css" href="lib/jasmine-1.0.1/jasmine.css">
+  <script type="text/javascript" src="../src/lib/jquery.js"></script>
   <script type="text/javascript" src="lib/jasmine-1.0.1/jasmine.js"></script>
   <script type="text/javascript" src="lib/jasmine-1.0.1/jasmine-html.js"></script>
 
@@ -20,6 +21,22 @@
   jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
   jasmine.getEnv().execute();
 </script>
+<div>
+<ul id="atmMachine">
+    <li><label for="accountNumber">Account Number:&#160;</label>
+        <input type="text" name="accountNumber" id="accountNumber" maxlength="10"/></li>
+    <li><label for="PIN">PIN:&#160;</label>
+        <input type="password" name="PIN" id="PIN" maxlength="4" /></li>
+    <li><label for="amount">Amount:&#160;</label>
+        <input type="text" name="amount" id="amount" /></li>
+    <li><input type="submit" id="withdraw" value="Withdraw Money" />
+    </li>
+    
+    <li>Current Balance: <span id="accountBalance"></span></li>
+    <li><label for="cashDrawer">Cash Drawer:&nbsp;</label>
+        <input id="cashDrawer" name="cashDrawer" type="text" /></li>
+</ul>
 
+</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-<ul>
+<ul id="atmMachine">
     <li><label for="accountNumber">Account Number:&#160;</label>
         <input type="text" name="accountNumber" id="accountNumber" maxlength="10"/></li>
     <li><label for="PIN">PIN:&#160;</label>
@@ -10,8 +10,11 @@
     <li><label for="amount">Amount:&#160;</label>
         <input type="text" name="amount" id="amount" /></li>
     <li><input type="submit" id="withdraw" value="Withdraw Money" />
-        <input type="submit" id="checkBalance" value="Check Account Balane" />
     </li>
     
+    <li>Current Balance: <span id="accountBalance"></span></li>
+    <li><label for="cashDrawer">Cash Drawer:&nbsp;</label>
+        <input id="cashDrawer" name="cashDrawer" type="text" /></li>
+</ul>
 </body>
 </html>
