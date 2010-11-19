@@ -23,4 +23,8 @@ describe("ATM Story Tests", function() {
     it("Prevents Judy from withdrawing money when she puts in an incorrect account number", function() {
         expect(machine.withdraw(50, '0987654321', 1234)).toEqual(0);
     });
+    it("Updates Judys balance when she withdraws money", function() {
+        machine.withdraw(25, '1234567890', 1234);
+        expect(machine.checkBalance('1234567890', 1234).toEqual(75));
+    });
 });
