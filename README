@@ -1,0 +1,10 @@
+The Setup: Javascript is an interesting language in it's own right, but it is complicated by the fact that in order to really use javascript, you also need to interact with the HTML DOM as well.
+
+The good news is this allows you to create visible functionality much easier than most other languages. The bad news is that it prompts undisciplined spewing of code which eventually becomes a nightmare to maintain.
+
+This kata is intended to guide us in creating well crafted javascript while we create end to end functionality.
+
+Stories:
+As Judy, I would like to withdraw money from my account if I have the funds available
+As Judy, I would like to withdraw money from my account only if I supply a valid account number and PIN
+As the bank, I would like the balance on Judys account to be updated when she withdraws money
